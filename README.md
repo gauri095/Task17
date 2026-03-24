@@ -1,14 +1,17 @@
-# JavaScript Promise Division Task
+# My Promise Assignment
 
-## Features
-- **Arrow Function Syntax**: Clean and modern ES6 implementation.
-- **Asynchronous Logic**: Uses `new Promise()` to handle results.
-- **Error Handling**: Custom error messages for zero-division.
-- **Automated Testing**: Runs 5 dummy test cases immediately upon loading.
+### What I did:
+I made a function using `=>` (arrow function) that handles division. 
+Instead of just returning a number, it returns a **Promise**. 
 
-## How to Run
-1. Ensure all three files (`index.html`, `style.css`, `README.md`) are in the same directory.
-2. Open `index.html` in any modern web browser.
-3. Observe the results in the dark terminal-style box.
-4. Click **"Re-run Tests"** to trigger the logic again.
+### What I learned about Promises:
+Promises are like a "placeholder" for a value you don't have yet. 
+- If the division works, I use `resolve`.
+- If someone tries to divide by zero, I use `reject` to send an error.
+- Using `.then()` and `.catch()` is how we actually get the result out of the promise.
 
+### Difficulties:
+It was a bit confusing at first to remember that `resolve` and `reject` are functions themselves that you have to call. I also had to make sure my `if` statement checked the second number, not the first!
+
+### How to run:
+Just open the `index.html` file in Chrome or any browser. Check the page and the Console (F12) to see the 5 test cases.
